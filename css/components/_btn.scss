@@ -1,0 +1,43 @@
+.btn {
+  padding: 21px 41px;
+  // border-radius задать больше чем 50% от высоты
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  border: none;
+
+  &--theme--white {
+    color: $darkGreen;
+    background: #fff;
+
+    &:hover {
+      color: #fff;
+      background: $darkGreen;
+    }
+  }
+
+  &--theme--green {
+    background: $darkGreen;
+    color: #fff;
+
+    &:hover {
+      color: $darkGreen;
+      background: #fff;
+    }
+  }
+
+  &--theme--transparent {
+    background: transparent;
+    color: #000;
+    text-transform: none;
+    font-weight: 400;
+
+    &:hover {
+      color: $darkGreen;
+    }
+  }
+}
+

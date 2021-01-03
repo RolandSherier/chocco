@@ -1,0 +1,60 @@
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 23px;
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--checkbox {
+    .radio__visible {
+      border-radius: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(../../img/tick.png) 50% no-repeat;
+      }
+    }
+  }
+}
+
+.radio__elem {
+  display: none;
+  // Если элемент радио будет в состоянии checked, то ниже элемент получит
+  // display: block;
+  &:checked ~ .radio__visible {
+    &::before {
+      content: "";
+      display: block;
+    }
+  }
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 10px;
+
+  &::before {
+    content: "";
+    display: none;
+    width: 14px;
+    height: 14px;
+    background: #365A49;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

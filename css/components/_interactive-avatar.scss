@@ -1,0 +1,32 @@
+.interactive-avatar {
+  width: 80px;
+  height: 80px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  // Втягиваем в рамки
+  overflow: hidden;
+
+  &--active {
+    border: 6px solid $darkGreen;
+  }
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  // Так как изменяли размеры (непонятно зачем нужно)
+  display: block;
+}
+
+.reviews-avatar__img {
+  // Придаем 100%высоте и ширине, чтобы занимало все пространство
+  display: block;
+  width: 100%;
+  height: 100%;
+  // Позволяет растянуть равномерно по всей ширине контейнера
+  object-fit: cover;
+}
