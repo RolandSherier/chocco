@@ -1,5 +1,5 @@
 .hero {
-  background: url(../../img/big-leaf.png) right bottom 50% no-repeat;
+  background: url(../img/big-leaf.png) right bottom 50% no-repeat;
   position: relative;
   background-color: $blue;
   height: 100vh;
@@ -7,7 +7,7 @@
   color: #fff;
 
   &::before {
-    content: url('../../img/corner-leaf.png');
+    content: url('../img/corner-leaf.png');
     position: absolute;
     bottom: -40px;
     // В зависимости от ширины окна
@@ -15,7 +15,7 @@
   }
 
   &::after {
-    content: url('../../img/berries.png');
+    content: url('../img/berries.png');
     position: absolute;
     bottom: -40px;
     right: 0;
@@ -30,7 +30,7 @@
   height: 100vh;
   // ! отступы от краев сайта
   padding: 24px 0 45px;
-  background:url(../../img/chocolates.png)right center / 50% auto no-repeat;
+  background:url(../img/chocolates.png)right center / 50% auto no-repeat;
 }
 
 .hero__title-section {

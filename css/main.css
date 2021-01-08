@@ -75,7 +75,7 @@ footer {
 }
 
 .hero {
-  background: url(../../img/big-leaf.png) right bottom 50% no-repeat;
+  background: url(../img/big-leaf.png) right bottom 50% no-repeat;
   position: relative;
   background-color: #61c4d9;
   height: 100vh;
@@ -83,13 +83,13 @@ footer {
   color: #fff;
 }
 .hero::before {
-  content: url("../../img/corner-leaf.png");
+  content: url("../img/corner-leaf.png");
   position: absolute;
   bottom: -40px;
   left: 2%;
 }
 .hero::after {
-  content: url("../../img/berries.png");
+  content: url("../img/berries.png");
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -101,7 +101,7 @@ footer {
   justify-content: space-between;
   height: 100vh;
   padding: 24px 0 45px;
-  background: url(../../img/chocolates.png) right center/50% auto no-repeat;
+  background: url(../img/chocolates.png) right center/50% auto no-repeat;
 }
 
 .hero__title-section {
@@ -263,7 +263,7 @@ footer {
   position: relative;
 }
 .benefits__item:before {
-  content: url(../../img/separator.png);
+  content: url(../img/separator.png);
   position: absolute;
   top: 30px;
   right: 0px;
@@ -311,11 +311,11 @@ footer {
 
 .benefits-section {
   position: relative;
-  background: url(../../img/side-leaf.png) left top 57% no-repeat;
+  background: url(../img/side-leaf.png) left top 57% no-repeat;
   margin-bottom: 60px;
 }
 .benefits-section::before {
-  content: url(../../img/bars-and-beries.png);
+  content: url(../img/bars-and-beries.png);
   position: absolute;
   bottom: -150px;
   left: 0;
@@ -326,7 +326,7 @@ footer {
   overflow: hidden;
 }
 .reviews::before {
-  content: url(../../img/raspberry.png);
+  content: url(../img/raspberry.png);
   position: absolute;
   width: 127px;
   height: 167px;
@@ -430,7 +430,7 @@ footer {
   margin-bottom: 60px;
 }
 .reviews-section::before {
-  content: url(../../img/strawberry.png);
+  content: url(../img/strawberry.png);
   position: absolute;
   top: 0;
   right: 0;
@@ -438,7 +438,7 @@ footer {
   height: 78px;
 }
 .reviews-section::after {
-  content: url(../../img/leaf-and-berries.png);
+  content: url(../img/leaf-and-berries.png);
   position: absolute;
   width: 135px;
   height: 193px;
@@ -447,7 +447,7 @@ footer {
 }
 
 .order-section {
-  background: url(../../img/pattern.png) center/cover no-repeat;
+  background: url(../img/pattern.png) center/cover no-repeat;
   display: flex;
   justify-content: space-between;
   padding: 65px 0 0px;
@@ -517,7 +517,7 @@ footer {
 .radio--checkbox .radio__visible::before {
   content: "";
   position: absolute;
-  background: url(../../img/tick.png) 50% no-repeat;
+  background: url(../img/tick.png) 50% no-repeat;
 }
 
 .radio__elem {

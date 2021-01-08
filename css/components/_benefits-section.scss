@@ -1,10 +1,10 @@
 .benefits-section {
   position: relative;
-  background: url(../../img/side-leaf.png) left top 57% no-repeat;
+  background: url(../img/side-leaf.png) left top 57% no-repeat;
   margin-bottom: 60px;
 
   &::before {
-    content: url(../../img/bars-and-beries.png);
+    content: url(../img/bars-and-beries.png);
     position: absolute;
     bottom: -150px;
     left: 0;

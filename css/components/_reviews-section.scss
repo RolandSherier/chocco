@@ -3,7 +3,7 @@
   margin-bottom: 60px;
 
   &::before {
-    content: url(../../img/strawberry.png);
+    content: url(../img/strawberry.png);
     position: absolute;
     top: 0;
     right: 0;
@@ -12,7 +12,7 @@
   }
 
   &::after {
-    content: url(../../img/leaf-and-berries.png);
+    content: url(../img/leaf-and-berries.png);
     position: absolute;
     width: 135px;
     height: 193px;
