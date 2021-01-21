@@ -11,8 +11,8 @@
   &:before {
     content: url(../img/separator.png);
     position: absolute;
-    top: 30px;
-    right: 0px;
+    top: rem(30px);
+    right: rem(0px);
     transform: translateX(50%);
 
   }

@@ -2,7 +2,7 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 23px;
+  margin-right: rem(23px);
 
   &:nth-child(2) {
     margin-right: 0;
@@ -19,7 +19,7 @@
       &::before {
         content: "";
         position: absolute;
-        background: url(../img/tick.png) 50% no-repeat;
+        background: url(../img/tick.png) 35% 55% no-repeat;
       }
     }
   }
@@ -38,18 +38,18 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px;
+  margin-right: rem(10px);
 
   &::before {
     content: "";
     display: none;
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     background: #365A49;
     border-radius: 50%;
     position: absolute;
@@ -58,3 +58,4 @@
     transform: translate(-50%, -50%);
   }
 }
+

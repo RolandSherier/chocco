@@ -1,6 +1,6 @@
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,9 +13,13 @@
 .section__title {
   // Цвет настледуется от родителя
   color: inherit;
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: rem(65px);
+
+  @include tablets {
+    margin-bottom: 1.611111rem;
+  }
 }

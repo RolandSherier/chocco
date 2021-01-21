@@ -1,12 +1,18 @@
 .benefits-section {
   position: relative;
   background: url(../img/side-leaf.png) left top 57% no-repeat;
-  margin-bottom: 60px;
+  margin-bottom: rem(60px);
 
   &::before {
     content: url(../img/bars-and-beries.png);
     position: absolute;
-    bottom: -150px;
+    bottom: rem(-150px);
     left: 0;
+  }
+}
+
+.benefits-section {
+  @include tablets {
+    background-position: left top 10%;
   }
 }

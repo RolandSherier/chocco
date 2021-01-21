@@ -1,22 +1,22 @@
 .reviews-section {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: rem(60px);
 
   &::before {
     content: url(../img/strawberry.png);
     position: absolute;
     top: 0;
     right: 0;
-    width: 136px;
-    height: 78px;
+    width: rem(136px);
+    height: rem(78px);
   }
 
   &::after {
     content: url(../img/leaf-and-berries.png);
     position: absolute;
-    width: 135px;
-    height: 193px;
-    bottom: -20px;
+    width: rem(135px);
+    height: rem(193px);
+    bottom: rem(-20px);
     left: 0;
   }
 }

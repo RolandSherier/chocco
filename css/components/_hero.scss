@@ -3,13 +3,17 @@
   position: relative;
   background-color: $blue;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   color: #fff;
+
+  @include tablets {
+    background-position: right bottom 74%;
+  }
 
   &::before {
     content: url('../img/corner-leaf.png');
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     // В зависимости от ширины окна
     left: 2%;
   }
@@ -17,10 +21,19 @@
   &::after {
     content: url('../img/berries.png');
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     right: 0;
   }
 }
+
+.hero {
+  &::before, &::after {
+    @include tablets {
+      display: none;
+    }
+  }
+}
+
 
 .hero__container {
   display: flex;
@@ -29,24 +42,53 @@
   // !
   height: 100vh;
   // ! отступы от краев сайта
-  padding: 24px 0 45px;
+  padding: rem(24px) 0 rem(45px);
   background:url(../img/chocolates.png)right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__title-section {
   width: 45%;
+
+  @include tablets {
+    width: 100%;
+    //чтобы растянуть на всю высоту
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+      content: url('../img/hero-bars.png');
+    }
+  }
+}
+
+.hero__icon-section {
+  @include tablets {
+    display: none;
+  }
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 53px;
+  font-size: rem(21px);
+  margin-bottom: rem(53px);
   padding-right: 15%;
+
+  @include tablets {
+    padding: 0 27%;
+  }
 }
