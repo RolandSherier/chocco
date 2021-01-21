@@ -9,4 +9,7 @@
 .headline__subtitle {
   padding: 0 26%;
   margin-bottom: rem(49px);
+  @include phones {
+    padding: 0px 5%;
+  }
 }

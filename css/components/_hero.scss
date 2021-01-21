@@ -64,7 +64,11 @@
     text-align: center;
 
     &::before {
-      content: url('../img/hero-bars.png');
+      content: '';
+      width: rem(316px);
+      height: rem(330px);
+      background: url('../img/hero-bars.png') center center /contain no-repeat;
+      margin-bottom: rem(16px);
     }
   }
 }
@@ -90,5 +94,9 @@
 
   @include tablets {
     padding: 0 27%;
+  }
+
+  @include phones {
+    padding: 0px 15%;
   }
 }

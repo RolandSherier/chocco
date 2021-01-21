@@ -7,7 +7,7 @@
 
 //Добавляем два класса чтобы увеличить приоритет, тем самым
 //перебьем другие стили
-.phone-number.header__phone-number {
+.phone.header__phone {
   @include tablets {
     display: none;
   }
@@ -44,25 +44,24 @@
   text-decoration: none;
 }
 
-.phone-number {
+.phone {
   display: flex;
   align-items: center;
   font-size: rem(22px);
   text-decoration: none;
 }
 
-.phone-number__icon-elem {
+.phone__icon {
+  //чтобы при сжатия окна иконка не сжималась
+  flex-shrink: 0;
+}
+
+.phone__icon-elem {
   width: rem(12px);
   height: rem(12px);
   margin-right: rem(6px);
 }
 
-
-.phone-number__icon {
-  //чтобы при сжатия окна иконка не сжималась
-  flex-shrink: 0;
-}
-
-.phone-number__text {
+.footer__phone-text {
   white-space: nowrap;
 }

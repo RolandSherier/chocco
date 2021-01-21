@@ -3,11 +3,19 @@
   background: url(../img/side-leaf.png) left top 57% no-repeat;
   margin-bottom: rem(60px);
 
+  @include phones {
+    background: none;
+  }
+
   &::before {
     content: url(../img/bars-and-beries.png);
     position: absolute;
     bottom: rem(-150px);
     left: 0;
+
+    @include phones {
+      content: none;
+    }
   }
 }
 
