@@ -625,6 +625,11 @@ footer {
   bottom: -1.1111111111rem;
   left: 0;
 }
+@media screen and (max-width: 480px) {
+  .reviews-section::after {
+    display: none;
+  }
+}
 
 .order-section {
   background: url(../img/pattern.png) center/cover no-repeat;

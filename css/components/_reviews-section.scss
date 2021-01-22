@@ -18,5 +18,9 @@
     height: rem(193px);
     bottom: rem(-20px);
     left: 0;
+
+    @include phones {
+      display: none;
+    }
   }
 }
