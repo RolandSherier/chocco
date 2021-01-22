@@ -1,23 +1,23 @@
 .social {
   display: flex;
+  width: 125px;
+  align-items: center;
 }
 
 .social__list {
-
-}
-
-.social__item {
-
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .social__link {
-
-
-}
-
-.social__link-vk {
-  background: url('../img/vk.svg');
   display: block;
   width: 21px;
-  height: 12px;
+  height: 20px;
+}
+
+@each $social in (vk, fb, inst, tw){
+  .social__#{$social} {
+    background: url('../img/#{$social}.png') center center no-repeat;
+  }
 }

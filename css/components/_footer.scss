@@ -1,11 +1,41 @@
 .footer {
-  padding: rem(24px) 0 rem(18px);
+  display: flex;
+  padding: rem(17px) 0;
+
+  @include phones {
+    padding: rem(17px) 0 rem(42px);
+  }
+}
+
+.footer-container {
+  display: inline-flex;
+  justify-content: space-between;
+
+  @include tablets {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+
+  @include phones {
+    justify-content: center;
+  }
+}
+
+.footer__address {
+  
+  @include phones {
+    margin-bottom: rem(13px);
+  }
 }
 
 .footer__street {
   color: #292929;
   font-style: normal;
   font-size: 21px;
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 }
 
 .footer__phone-text {

@@ -49,6 +49,9 @@
   align-items: center;
   font-size: rem(22px);
   text-decoration: none;
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .phone__icon {
